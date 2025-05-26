@@ -1,66 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏨 Hotel Management Application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern web-based Hotel Management System designed to help hotels manage **staff**, **room bookings**, **services**, and **customer queries** efficiently.  
+Built with **Laravel (PHP)** and optimized for seamless use across **desktops, tablets, and mobile devices**.
 
-## About Laravel
+## 📌 Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### ✅ What This App Does
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- 🧑‍💼 Organize staff by departments  
+- 🛏️ View and manage room booking requests (approve or reject)  
+- 🛠️ Add, edit, or delete hotel services  
+- 💬 View and reply to customer questions or feedback  
+- 🔐 Secure login/logout system  
+- 📱 Fully responsive — works on desktop, tablet, and mobile  
+- 🔔 Success and error messages that auto-dismiss after a few seconds  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🙋‍♂️ How Users Can Use the App
 
-## Learning Laravel
+### 🏠 Homepage
+- View image slider showcasing the hotel  
+- Check out available services  
+- Browse the room gallery  
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 🔐 Login or Register
+- 🆕 New users can register an account  
+- 🔁 Existing users can log in to their dashboard  
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🛏️ Book a Room
+- View room categories (e.g., Single, Double, Suite)  
+- Choose a room type and see available rooms  
+- Fill out the booking form (number of guests, check-in/out dates, contact info)  
+- Submit a booking request for admin approval  
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### ✅ Booking Approval
+- Admin reviews all booking requests  
+- Users are notified whether their booking is **approved** or **declined**
 
-## Laravel Sponsors
+## 🔧 Admin Dashboard (For Hotel Managers)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Admins have access to a dedicated dashboard to manage all hotel content and operations.
 
-### Premium Partners
+### 📋 Admin Features
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- 🏷️ Manage Room Types (e.g., Single, Double, Suite)  
+- 🛏️ Manage Rooms (add, update, delete)  
+- 🧑‍🤝‍🧑 Manage Departments (organize staff into groups)  
+- 📆 Manage Bookings (approve, reject, or delete requests)  
+- 🛎️ Manage Services (add, edit, remove services)  
+- 💬 View and reply to User Queries  
+- 🔓 Secure logout functionality  
 
-## Contributing
+### 📂 Admin Pages
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- 🏠 **Dashboard Home** – View quick stats (e.g., total customers, staff count)  
+- 📑 **Booked Details** – Full list of bookings with action buttons  
+- 🛠️ **Services Page** – Add, edit, or remove hotel services  
+- 🗂️ **Rooms by Category** – View rooms grouped by room type  
+- 🧾 **Rooms List** – View and manage all hotel rooms  
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🛠️ Technology Stack
 
-## Security Vulnerabilities
+| Tech           | Description                               |
+|----------------|-------------------------------------------|
+| **Laravel (PHP)** | Backend framework for routing and business logic |
+| **MySQL**         | Relational database for storing app data |
+| **Bootstrap 5**   | Responsive layout and modern UI styling |
+| **Blade**         | Laravel's built-in templating engine     |
+| **FontAwesome**   | Icon library for visual elements          |
+| **JavaScript**    | For dynamic UI interactions and alerts   |
+| **Git & GitHub**  | Version control and code hosting         |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+## 🚀 In Short
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- 🌐 Visitors can browse rooms and services  
+- 👥 Users can register/login to book rooms by category  
+- 🛠️ Admins can manage everything from staff to bookings  
+- 📱 Fully responsive — works great on desktop, tablet, and mobile devices  
+
+
