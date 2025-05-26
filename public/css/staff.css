@@ -1,0 +1,10 @@
+.btn-add-staff:hover{
+background:rgb(102, 213, 102);
+
+transform: none !important;
+
+}
+
+.w-5.h-5{
+    width: 20px !important;
+}

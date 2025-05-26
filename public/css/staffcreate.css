@@ -1,0 +1,12 @@
+.btn-view-staff:hover{
+    background:rgb(102, 213, 102) !important;
+    
+    transform: none !important;
+    
+    }
+
+    .btn-staff-cancel:hover{
+
+        background-color: #ffc107 !important;
+
+    }

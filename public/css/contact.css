@@ -1,0 +1,85 @@
+body {
+    /* background-color: purple; */
+    min-height: 100vh;
+    background: linear-gradient(#ff4b2b, #ff416c);
+    font-family: Arial, sans-serif;
+
+}
+
+.btn-custom:hover {
+    background: linear-gradient(#ff4b2b, #ff416c);
+    transform: scale(1.05);
+}
+
+.btn-custom {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    transition: 0.3s;
+}
+
+.contact-cart:hover {
+    transform: translateY(-10px);
+}
+
+.contact-cart {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.home-btn {
+    
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+   font-size: 28px;
+   
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    transform: scale(1.15) rotate(10deg);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+
+.home-btn:active {
+    transform: scale(0.95);
+}
+
+
+.quick-links-container {
+    
+    padding: 50px 30px;
+    border-radius: 8px;
+    
+    transition: all 0.3s ease;
+  }
+
+  .quick-links-container:hover {
+    transform: translateY(-5px);       
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Icon Styling */
+  .quickicon {
+    font-size: 36px;                    
+    transition: transform 0.3s, color 0.3s;
+    margin: 0 15px;                     
+  }
+
+ 
+
+  .fa-facebook:hover {
+    color: #E1306C;                       
+  }
+
+  .fa-instagram:hover {
+    color: #E1306C;                    
+  }
+
+  .fa-x-twitter:hover {
+    color: #E1306C;                    
+  }

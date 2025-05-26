@@ -1,0 +1,87 @@
+
+
+body {
+    background: linear-gradient(135deg, #74EBD5, #ACB6E5);
+    font-family: Arial, sans-serif;
+  }
+
+  .booking-container {
+   
+    width: 90%;
+    max-width: 700px;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  /* Default placeholder size */
+  .placeholder-sm::placeholder {
+    font-size: 16px; /* Normal size for larger screens */
+  }
+
+  /* Placeholder smaller on screens <= 425px */
+  @media (max-width: 425px) {
+    .placeholder-sm::placeholder {
+      font-size: 12px; /* Smaller placeholder for small screens */
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .btn-custom {
+    background: #74EBD5;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+  }
+
+  .btn-custom:hover {
+    background: #57D9B9;
+    color: #fff;
+  }
+
+
+
+/*footer */
+.quick-links-container {
+    
+    padding: 50px 30px;
+    border-radius: 8px;
+    
+    transition: all 0.3s ease;
+  }
+
+  .quick-links-container:hover {
+    transform: translateY(-5px);       
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Icon Styling */
+  .quickicon {
+    font-size: 36px;                    
+    transition: transform 0.3s, color 0.3s;
+    margin: 0 15px;                     
+  }
+
+ 
+
+  .fa-facebook:hover {
+    color: #E1306C;                       
+  }
+
+  .fa-instagram:hover {
+    color: #E1306C;                    
+  }
+
+  .fa-x-twitter:hover {
+    color: #E1306C;                    
+  }
+
+
