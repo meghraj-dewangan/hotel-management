@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2025 at 11:46 AM
+-- Generation Time: May 26, 2025 at 05:15 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -351,7 +351,8 @@ INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `n
 (117, 'App\\Models\\User', 19, 'myapp', 'a59c2343a4c13d2c438030ed11d6c0eae0df276b87e6dd246c29ffdc98bb37cb', '[\"*\"]', NULL, NULL, '2025-05-26 03:04:11', '2025-05-26 03:04:11'),
 (118, 'App\\Models\\User', 20, 'myapp', '4dcf22f7a2ec69350b06dccefcef9853cd7e7668dcc3c701cde0944c088d1047', '[\"*\"]', NULL, NULL, '2025-05-26 03:07:19', '2025-05-26 03:07:19'),
 (119, 'App\\Models\\User', 20, 'myapp', 'c7511897c42a503980b8552baf6743f98a75849312d58656713c1b5f44a27c93', '[\"*\"]', NULL, NULL, '2025-05-26 03:07:31', '2025-05-26 03:07:31'),
-(120, 'App\\Models\\User', 13, 'myapp', '22c721909c60cce5ff0cdaefb03950df6c2f258c8c9a2a673abbb2c5b34d7933', '[\"*\"]', NULL, NULL, '2025-05-26 03:08:37', '2025-05-26 03:08:37');
+(120, 'App\\Models\\User', 13, 'myapp', '22c721909c60cce5ff0cdaefb03950df6c2f258c8c9a2a673abbb2c5b34d7933', '[\"*\"]', NULL, NULL, '2025-05-26 03:08:37', '2025-05-26 03:08:37'),
+(121, 'App\\Models\\User', 13, 'myapp', 'f4f793b129b64bdb756d5b99383dc5511600e134cd4d1f0e97e6cd10995429b7', '[\"*\"]', NULL, NULL, '2025-05-26 08:52:14', '2025-05-26 08:52:14');
 
 -- --------------------------------------------------------
 
@@ -454,8 +455,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('c6zrKAy0Y2IT2xIWOtz5xPq1sVW1rRrehI7f5OT5', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoib0czaE50VGswRXhZRUNLbVJMeFhUR21rQU9BZjBkSEozSHBQYVlUViI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9ob21lIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1748111598),
-('Ty9G0FMJOZVUZxJKWxuW47AYYhHfhcuk8NMFJLLA', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiYlJOTmx3SWlhWktkMTIzRG5GRDlHTG1KbWFpZkIzQW5hNndQRFBZUSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9ob21lIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1748252705);
+('A3YlI0bk3MPljmtLzwwBpYlWtd6LlF0MaCKB8xbu', 13, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiUEQzWHN3eW5ESzdCbDdKSktxMVdBRExIaExCbWtYQ2FTZXRUcXhENCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjEzO30=', 1748272226);
 
 -- --------------------------------------------------------
 
@@ -479,12 +479,16 @@ CREATE TABLE `staff` (
 --
 
 INSERT INTO `staff` (`id`, `name`, `email`, `phone`, `designation`, `department_id`, `created_at`, `updated_at`) VALUES
-(4, 'meghraj', 'meghraj@gmail.com', '654654654', 'md', 5, NULL, NULL),
-(7, 'babu', 'babu2@gmail.com', '975545', 'director', 6, NULL, '2025-05-19 10:03:00'),
-(10, 'anugya', 'anugya@gmail.com', '8109912840', 'md', 7, NULL, '2025-05-19 10:03:14'),
-(11, 'amar', 'amar@gmail.com', '81099', 'Finance Manager', 5, '2025-05-20 06:33:35', '2025-05-20 06:33:35'),
-(12, 'papa', 'papa@gmail.com', '454545', 'Bartender', 8, '2025-05-20 06:37:27', '2025-05-20 06:37:27'),
-(13, 'mama', 'mama@gmail.com', '8848484', 'Accountant', 8, '2025-05-20 10:53:45', '2025-05-20 10:53:45');
+(15, 'Roshan', 'roshan@gmail.com', '9485854725', 'Receptionist', 5, '2025-05-26 08:53:44', '2025-05-26 08:53:44'),
+(16, 'Karan', 'karan@gmail.com', '92458722852', 'F&B Manager', 5, '2025-05-26 08:54:20', '2025-05-26 08:54:20'),
+(17, 'Priyank', 'priyank', '65525245858', 'Front Office Manager', 5, '2025-05-26 08:54:53', '2025-05-26 08:54:53'),
+(18, 'Kaushal', 'kaushal@gmail.com', '5474859615', 'Reservation Executive / Agent', 6, '2025-05-26 08:55:31', '2025-05-26 08:55:31'),
+(19, 'Vashu', 'vashu@gmail.com', '78545985964', 'Finance Manager', 6, '2025-05-26 08:56:09', '2025-05-26 08:56:09'),
+(20, 'Ankur', 'ankur@gmail.com', '5478632574', 'Waiter', 7, '2025-05-26 08:56:53', '2025-05-26 08:56:53'),
+(21, 'Raja', 'raja@gmail.com', '5488565845', 'F&B Manager', 7, '2025-05-26 08:57:21', '2025-05-26 08:57:21'),
+(22, 'Anugya', 'anugya@gmail.com', '6547582314', 'Accountant', 8, '2025-05-26 08:57:53', '2025-05-26 08:57:53'),
+(23, 'Anshul', 'anshul@gmail.com', '8995474852', 'Accountant', 8, '2025-05-26 08:58:28', '2025-05-26 08:58:28'),
+(24, 'Kiran', 'kiran@gmail.com', '8547589625', 'Booking Clerk', 8, '2025-05-26 08:58:57', '2025-05-26 08:58:57');
 
 -- --------------------------------------------------------
 
@@ -673,7 +677,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
 
 --
 -- AUTO_INCREMENT for table `rooms`
@@ -697,7 +701,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `users`
